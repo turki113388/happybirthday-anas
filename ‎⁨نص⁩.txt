@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Birthday, Anas!</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      background: #fce4ec;
+      color: #880e4f;
+      margin: 0; padding: 0;
+    }
+    .container {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .gift {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+    .message {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      padding: 1rem 2rem;
+      background: #d81b60;
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #ad1457;
+    }
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="gift">🎂 Happy Birthday, Anas! 🎂</div>
+    <div class="message">Wishing you joy, love, and laughter on your special day!</div>
+    <button class="btn" onclick="playAudio()">Play 🎶</button>
+    <audio id="birthdaySound" loop>
+      <source src="birthday-song.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <script>
+    function playAudio() {
+      document.getElementById('birthdaySound').play();
+    }
+  </script>
+</body>
+</html>
